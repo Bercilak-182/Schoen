@@ -60,7 +60,7 @@
 .cid-tf7qv0mBe5 {
   padding-top: 45px;
   padding-bottom: 45px;
-  background-color: #3A3A3A;
+  background-color: #ffffff;
 }
 
 /* *Fondo de imagenes en servicios*/
@@ -70,4 +70,17 @@
 }
 .cid-tf7qYwOpWt .img2 {
   background: #ffffff;
+}
+
+/* *Fondo de iconos de enfoque empresarial*/
+.cid-tf7qGNG2M2 .icon-box {
+  background: #ffffff;
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
