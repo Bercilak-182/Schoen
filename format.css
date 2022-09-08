@@ -1,4 +1,12 @@
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 25px;
+}
+
 /* *Borde inferiror enfoque */
 .cid-tf7qGNG2M2 { 
     padding-top: 3rem;
@@ -85,85 +93,82 @@
   align-items: center;
 }
 
-/* *Tipo de letra, tamaño y ajuste en moviles*/
 
-body {
-  font-family: Jost;
+
+/* * Seccion Enfoque empresarial */
+.enfoque-seccion-icon {
+  font-size: 48px;
+  color: #00a099;
 }
-.display-1 {
-  font-family: 'Jost', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.1;
+
+.cid-tf7qGNG2M2 .icon-box {
+  width: 100px;
+  height: 100px;
+  background: rgb(155,193,202);
+  background: linear-gradient(180deg, rgba(155,193,202,1) 0%, rgba(155,193,202,0.42450976972820376) 75%); 
 }
-.display-1 > .mbr-iconfont {
-  font-size: 3rem;
+
+
+.seccion-seccion-icon  {
+  font-size: 150px;
+  color: #6a8aaf;
 }
-.display-2 {
-  font-family: 'Jost', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.1;
+
+.video-background {
+  background-attachment: scroll;
+  background-position: 0px -135.517px;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 160, 153, 0.73)),
+              url(assets/images/Fotos_Schoen_Lab_Página_74.jpg) no-repeat left top;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
 }
-.display-2 > .mbr-iconfont {
-  font-size: 1.875rem;
+
+.cid-tf7rqPPtho .icon-wrapper {
+  background-color: #00A099;
 }
-.display-4 {
-  font-family: 'Jost', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+
+
+.item-wrapper .item-img img {
+  width: 300px;
 }
-.display-4 > .mbr-iconfont {
-  font-size: 1.25rem;
-}
-.display-5 {
-  font-family: 'Jost', sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-.display-5 > .mbr-iconfont {
-  font-size: 1.625rem;
-}
-.display-7 {
-  font-family: 'Jost', sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-.display-7 > .mbr-iconfont {
-  font-size: 2.5rem;
-}
-/* ---- Fluid typography for mobile devices ---- */
-/* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
-/* 100vw - current viewport width */
-/* (48 - 20)  48 == 48rem == 768px, 20 == 20rem == 320px(minimal supported viewport) */
-/* 0.65 - min scale variable, may vary */
-@media (max-width: 992px) {
-  .display-1 {
-    font-size: 1.92rem;
+
+/* * Productos */
+
+
+@media(min-width: 575px) and (max-width: 992px) {
+  .carouse-container {
+    max-width: unset;
+    /* background-color: red; */
+  }
+
+  .farmaco-container {
+    max-width: unset;
   }
 }
-@media (max-width: 768px) {
-  .display-1 {
-    font-size: 1.68rem;
-    font-size: calc( 1.49rem + (2.4 - 1.49) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.1 * (1.49rem + (2.4 - 1.49) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-2 {
-    font-size: 1.2rem;
-    font-size: calc( 1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.3 * (1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-4 {
-    font-size: 0.8rem;
-    font-size: calc( 1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-5 {
-    font-size: 1.04rem;
-    font-size: calc( 1.105rem + (1.3 - 1.105) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.105rem + (1.3 - 1.105) * ((100vw - 20rem) / (48 - 20))));
-  }
-  .display-7 {
-    font-size: 1.6rem;
-    font-size: calc( 1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20))));
-  }
+
+.product-label {
+  color: #386394;
+  font-weight: 500;
+}
+
+/* * Farmaco vigilancia */
+
+.farmaco-icon-wraper {
+  width: 150px;
+  margin: 30px;
+}
+
+.farmaco-vig-icon {
+  font-size: 65px;
+  color: red;
+}
+
+
+/** Navbar color active**/
+
+.navbar-nav>.active>a {
+  background-color: #;
+  color: green;
 }
