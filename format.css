@@ -1,4 +1,12 @@
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 25px;
+}
+
 /* *Borde inferiror enfoque */
 .cid-tf7qGNG2M2 { 
     padding-top: 3rem;
@@ -83,4 +91,76 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+/* * Seccion Enfoque empresarial */
+.enfoque-seccion-icon {
+  font-size: 48px;
+  color: #00a099;
+}
+
+.cid-tf7qGNG2M2 .icon-box {
+  width: 100px;
+  height: 100px;
+  background: rgb(155,193,202);
+  background: linear-gradient(180deg, rgba(155,193,202,1) 0%, rgba(155,193,202,0.42450976972820376) 75%); 
+}
+
+
+.seccion-seccion-icon  {
+  font-size: 150px;
+  color: #6a8aaf;
+}
+
+.video-background {
+  background-attachment: scroll;
+  background-position: 0px -135.517px;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 160, 153, 0.73)),
+              url(assets/images/Fotos_Schoen_Lab__Página_04.jpg) no-repeat left top;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.cid-tf7rqPPtho .icon-wrapper {
+  background-color: #00A099;
+}
+
+
+.item-wrapper .item-img img {
+  width: 300px;
+}
+
+/* * Productos */
+
+
+@media(min-width: 575px) and (max-width: 992px) {
+  .carouse-container {
+    max-width: unset;
+    /* background-color: red; */
+  }
+
+  .farmaco-container {
+    max-width: unset;
+  }
+}
+
+.product-label {
+  color: #386394;
+  font-weight: 500;
+}
+
+/* * Farmaco vigilancia */
+
+.farmaco-icon-wraper {
+  width: 150px;
+  margin: 30px;
+}
+
+.farmaco-vig-icon {
+  font-size: 70px;
+  color: red;
 }

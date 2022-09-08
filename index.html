@@ -33,7 +33,10 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="preload" as="style" href="format.css">
     <link rel="stylesheet" href="format.css" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -97,7 +100,7 @@
 
                 <div class="carousel-item slider-image item active">
                     <div class="item-wrapper">
-                        <img class="d-block w-100" src="assets/images/Fotos Schoen Lab__Página_04.jpg"
+                        <img class="d-block w-100" src="assets/images/Fotos_Schoen_Lab__Página_04.jpg"
                             alt="Mobirise Website Builder" data-slide-to="0" data-bs-slide-to="0">
 
                         <div class="carousel-caption">
@@ -152,11 +155,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="item mbr-flex">
-                        <div class="icon-box">
-                            <img src="assets/Icons/medal-solid.svg" width="40" height="40">
+                    <div class="item row mbr-flex">
+                        <!-- <div class="icon-box"> -->
+                        <div class="icon-box col-3">
+                            <!-- <img src="assets/Icons/medal-solid.svg" width="40" height="40"> -->
+                            <i class="fa-solid fa-medal enfoque-seccion-icon"></i>
                         </div>
-                        <div class="text-box">
+                        <!-- <div class="text-box"> -->
+                        <div class="text-box col-9">
                             <h4 class="titulo">
                                 <strong>Misión</strong>
                             </h4>
@@ -165,11 +171,12 @@
                                 mejorar la salud y bienestar de las personas.</p>
                         </div>
                     </div>
-                    <div class="item mbr-flex">
-                        <div class="icon-box">
-                            <img src="assets/Icons/lightbulb-solid.svg" width="40" height="40">
+                    <div class="item row mbr-flex">
+                        <div class="icon-box col-3">
+                            <!-- <img src="assets/Icons/lightbulb-solid.svg" width="40" height="40"> -->
+                            <i class="fa-solid fa-seedling enfoque-seccion-icon"></i>
                         </div>
-                        <div class="text-box">
+                        <div class="text-box col-9">
                             <h4 class="titulo">
                                 <strong>Visión</strong>
                             </h4>
@@ -229,7 +236,8 @@
                             </p>
                         </div>
                         <div class="img-wrapper img1 align-center">
-                            <img src="assets/Icons/pills-solid.svg">
+                            <!-- <img src="assets/Icons/pills-solid.svg"> -->
+                            <i class="fa-solid fa-pills seccion-seccion-icon"></i>
                         </div>
                     </div>
                 </div>
@@ -246,7 +254,8 @@
                             </p>
                         </div>
                         <div class="img-wrapper img2 align-center">
-                            <img src="assets/Icons/pump-medical-solid.svg">
+                            <!-- <img src="assets/Icons/pump-medical-solid.svg"> -->
+                            <i class="fa-solid fa-pump-medical seccion-seccion-icon"></i>
                         </div>
                     </div>
                 </div>
@@ -256,11 +265,11 @@
     <!-- * Servicios fin -->
 
     <!-- * Video inst. inicio -->
-    <section data-bs-version="5.1" class="header17 cid-tf7rqPPtho" id="header17-1s">
+    <section data-bs-version="5.1" class="header17 cid-tf7rqPPtho video-background" id="header17-1s">
         <div class="align-center container">
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
-                    <h4 class="titulo">
+                    <h4 class="titulo mb-4">
                         <strong>Video institucional&nbsp;</strong>
                     </h4>
 
@@ -294,13 +303,13 @@
 
     <!-- * Productos inicio -->
     <section data-bs-version="5.1" class="slider6 mbr-embla cid-tf7rx2cslI" id="slider6-1t">
-        <div class="position-relative">
+        <div class="position-relative container carouse-container">
             <div class="mbr-section-head">
                 <h4 class="align-center titulo"><strong>Productos</strong>
                 </h4>
             </div>
             <div class="embla mt-4" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps"
-                data-loop="true" data-auto-play="true" data-auto-play-interval="3" data-draggable="true">
+                data-loop="true" data-auto-play="true" data-auto-play-interval="30" data-draggable="true">
                 <div class="embla__viewport container-fluid">
                     <div class="embla__container">
                         <div class="embla__slide slider-image item active"
@@ -316,16 +325,27 @@
 
                                     <h5 class="subtitulo"><strong>Bromuro de
                                             Pinaverio</strong></h5>
-                                    <p class="producto">Nombre comercial
-                                        <br>BELIREX
-                                        <br>Nombre genérico
-                                        <br>Bromuro de Pinaverio
-                                        <br>Forma farmacéutica
-                                        <br>Tableta
-                                        <br>Presentaciones
-                                        <br>Caja con 14 tabletas
-                                        <br>N°. de registro sanitario
-                                        <br>008M2018 SSA IV
+                                    <p class="producto">
+                                        <label class="product-label">
+                                            Nombre comercial
+                                        </label><br>
+                                        BELIREX<br>
+                                        <label class="product-label">
+                                            Nombre genérico
+                                        </label><br>
+                                            Bromuro de Pinaverio<br>
+                                        <label class="product-label">
+                                            Forma farmacéutica
+                                        </label><br>
+                                            Tableta<br>
+                                        <label class="product-label">
+                                            Presentaciones
+                                        </label><br>
+                                            Caja con 14 tabletas<br>
+                                        <label class="product-label">
+                                            N°. de registro sanitario
+                                        </label><br>
+                                            008M2018 SSA IV
                                     </p>
                                 </div>
 
@@ -556,7 +576,7 @@
 
     <!-- * Farmacovigilancia info. inicio -->
     <section data-bs-version="5.1" class="features1 cid-tf7rEtGcs7" id="features1-1u">
-        <div class="container">
+        <div class="container farmaco-container">
             <div class="row">
                 <div class="col-12 col-lg-9">
                     <h4 class="align-center titulo">
@@ -567,9 +587,10 @@
             <div class="row">
                 <div class="card col-12 col-md-4">
                     <div class="card-wrapper">
-                        <div class="card-box align-center">
-                            <div class="iconfont-wrapper">
-                                <img src="assets/Icons/laptop-medical-solid.svg" width="40" height="40">
+                        <div class="card-box align-center d-flex align-items-center flex-column">
+                            <div class="iconfont-wrapper farmaco-icon-wraper">
+                                <!-- <img src="assets/Icons/laptop-medical-solid.svg" width="40" height="40"> -->
+                                <i class="fa-sharp fa-solid fa-laptop-medical farmaco-vig-icon"></i>
                             </div>
 
                             <p class="parrafo">¿Qué es la farmacovigilancia?<br>Es la
@@ -582,7 +603,7 @@
                 <div class="card col-12 col-md-4">
                     <div class="card-wrapper">
                         <div class="card-box align-center">
-                            <div class="iconfont-wrapper">
+                            <div class="iconfont-wrapper farmaco-icon-wraper">
                                 <img src="assets/Icons/hand-holding-medical-solid.svg" width="40" height="40">
                             </div>
 
@@ -598,7 +619,7 @@
                 <div class="card col-12 col-md-4">
                     <div class="card-wrapper">
                         <div class="card-box align-center">
-                            <div class="iconfont-wrapper">
+                            <div class="iconfont-wrapper farmaco-icon-wraper">
                                 <img src="assets/Icons/envelope-open-solid.svg" width="40" height="40">
                             </div>
                             <p class="parrafo">Para Laboratorios Schoen S.A. de C.V. es
