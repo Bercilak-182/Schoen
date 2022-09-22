@@ -36,6 +36,10 @@ p {
     color: #4A4A4A 
  }
 
+ .parrafo.form-paragraph {
+    text-align: justify;
+ }
+
  /* *Footer */
  .lfooter {
   color: #f4f4f4 
@@ -167,6 +171,11 @@ p {
 /** Navbar color active**/
 
 .navbar-nav>.active>a {
-  background-color: #;
+  background-color: #000;
   color: green;
+}
+
+.btn-submit:hover {
+  background-color: #00A099 !important;
+  border: #00A099 !important;
 }

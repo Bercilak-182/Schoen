@@ -39,6 +39,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="Js/forms.js"></script> -->
 </head>
 
 <body>
@@ -724,15 +727,18 @@
     <!-- * Farmacovigilancia form inicio -->
     <section data-bs-version="5.1" class="form5 cid-tf7rJO5Bhz" id="form5-1v">
         <div class="container">
-            <div class="mbr-section-head">
-                <h4 class="align-center titulo"><strong>REALICE SU REPORTE A FARMACOVIGILANCIA</strong></h4>
-                <p class="align-center parrafo">Si usted tienesospecha acerca de una Reacción Adversa con la
-                    administración
-                    de alguno de nuestros medicamentos, por favor registre la siguiente información. Nos
-                    pondremos en contacto
-                    con usted a la brevedad posible.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 mx-auto">
+                    <h4 class="align-center titulo mb-3"><strong>REALICE SU REPORTE A FARMACOVIGILANCIA</strong></h4>
+                    <p class="align-center form-paragraph parrafo mt-3">Si usted tienesospecha acerca de una Reacción Adversa con la
+                        administración
+                        de alguno de nuestros medicamentos, por favor registre la siguiente información. Nos
+                        pondremos en contacto
+                        con usted a la brevedad posible.
+                    </p>
+                </div>
             </div>
-            <div class="row justify-content-center mt-4">
+            <div class="row justify-content-center mt-3">
                 <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
                     <form id="form">
                         <div class="mb-3">
@@ -745,58 +751,24 @@
                         <div class="mb-3">
                             <textarea class="form-control" name="message" placeholder="Comentario" required></textarea>
                         </div>
-                        <button type="submit" id="button" value="Send Email" class="btn-black"> Enviar </button>
+                        <button type="submit" id="button" value="Send Email" class="btn btn-black btn-submit"> Enviar </button>
                     </form>
-                    <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-                    <script type="text/javascript">
-                        emailjs.init('ej0fe7RuxjhvGh8bu')
-                    </script>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-        const btn = document.getElementById('button');
-
-        document.getElementById('form')
-            .addEventListener('submit', function (event) {
-                event.preventDefault();
-
-
-                btn.value = 'Enviando...';
-
-                const serviceID = 'default_service';
-                const templateID = 'template_85s48zn';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-
-                        alert('Enviado!');
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-
-
-
-                    });
-
-            });
-    </script> <!-- Ingresar reset para formulario-->
     <!-- * Farmacovigilancia form fin -->
 
     <!-- * Contacto inicio -->
     <section data-bs-version="5.1" class="form3 cid-tf7rPugr3w" id="form3-1w">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-start">
                 <div class="col-lg-7 col-12">
                     <div class="image-wrapper">
                         <img class="w-100" src="assets/images/contacto-2-946x756.png" alt="Mobirise Website Builder">
                     </div>
                 </div>
-                <div class="col-lg-3 offset-lg-1 mbr-form" data-form-type="formoid">
+                <div class="col-lg-5 mbr-form" data-form-type="formoid">
                     <form id="form2">
                         <div class="dragArea row">
                             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -819,47 +791,13 @@
                                     required></textarea>
                             </div>
                             <div class="col-md-auto">
-                                <button class="btn-black" type="submit" id="boton" value="Send mail"> Enviar </button>
+                                <button class="btn btn-black btn-submit" type="submit" id="send-form2" value="Send mail"> Enviar </button>
                             </div>
                         </div>
                     </form>
-                    <script type="text/javascript"
-                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-                    <script type="text/javascript">
-                        emailjs.init('ej0fe7RuxjhvGh8bu')
-                    </script>
                 </div>
             </div>
     </section>
-    <script>
-        const bttn = document.getElementById('boton');
-
-        document.getElementById('form2')
-            .addEventListener('submit', function (event) {
-                event.preventDefault();
-
-
-                bttn.value = 'Enviando...';
-
-                const serviceID = 'default_service';
-                const templateID = 'template_wup4d1r';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        bttn.value = 'Send mail';
-
-                        alert('Enviado!');
-                    }, (err) => {
-                        bttn.value = 'Send mail';
-                        alert(JSON.stringify(err));
-
-
-
-                    });
-
-            });
-    </script><!-- Ingresar reset para formulario-->
     <!-- * Contacto fin -->
 
     <!-- * Footer inicio -->
@@ -916,8 +854,6 @@
     </section>
     <!-- * Mobirise Footer fin -->
 
-
-
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/ytplayer/index.js"></script>
@@ -928,6 +864,9 @@
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
 
+    <!-- * Mails Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" src="Js/forms.js"></script>
 
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
                 class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
