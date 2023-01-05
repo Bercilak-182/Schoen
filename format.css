@@ -171,11 +171,15 @@ p {
 /** Navbar color active**/
 
 .navbar-nav>.active>a {
-  background-color: #000;
+  background-color: #f4f4f4;
   color: green;
 }
 
 .btn-submit:hover {
   background-color: #00A099 !important;
   border: #00A099 !important;
+}
+
+.nav-item:hover {
+  background-color: lightsteelblue !important;
 }
